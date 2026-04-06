@@ -1,0 +1,18 @@
+# Temporary build files (Inhe GitHub par nahi bhejna)
+*.obj
+*.exe
+*.o
+*.pdb
+
+# Output files (Testing ka result)
+output.pcap
+my_traffic.pcapng
+filtered_output.pcap
+
+# Python virtual environment
+venv/
+__pycache__/
+
+# VS Code specific settings
+.vscode/
+.vs/
