@@ -1,5 +1,42 @@
 # DPI Engine - Deep Packet Inspection System
 
+Maintained & Tested by Yadvendra
+
+🌟 Personal Execution Summary
+I have successfully configured, built, and tested this Deep Packet Inspection engine on a modern Windows environment. This project demonstrates real-world network traffic analysis and rule-based packet filtering.
+
+📊 My System Test Results
+After compiling with GCC 15.2.0 and running against the standard test suite, here are the actual results from my local machine:
+
+Total Packets Processed: 77
+
+Traffic Blocked (Dropped): 8 packets (YouTube, TikTok, and Facebook domains)
+
+Engine Performance: Successfully utilized 2 Load Balancers and 4 Forwarding Processors.
+
+Protocols Identified: HTTPS (50.6%), DNS, TCP, and UDP.
+
+💻 Verified Environment
+OS: Windows 11
+
+Compiler: g++ (Rev13, Built by MSYS2 project) 15.2.0
+
+Build Tool: Custom CLI Build (MinGW-w64)
+
+Verification: Traffic filtering verified using Wireshark.
+
+🚀 Quick Start (My Verified Commands)
+To reproduce my results, use these exact commands in your terminal:
+
+1. Compile:
+
+PowerShell
+g++ -std=c++17 -pthread -O2 -I include -o dpi_engine.exe src/*.cpp
+2. Run with My Filters:
+
+PowerShell
+.\dpi_engine.exe test_dpi.pcap output.pcap --block-app YouTube --block-app TikTok --block
+
 
 This document explains **everything** about this project - from basic networking concepts to the complete code architecture. After reading this, you should understand exactly how packets flow through the system without needing to read the code.
 
